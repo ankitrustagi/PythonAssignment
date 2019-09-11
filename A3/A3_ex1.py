@@ -36,11 +36,11 @@ if __name__=="__main__":
 		hashfun = hashlib.sha256
 		find_duplicates(sys.argv[1], hashfun)
 	except IndexError:
-		print """Please pass a path to a directory with 
-        duplicate files as a parameter to the script."""
+		print ("""Please pass a path to a directory with 
+        duplicate files as a parameter to the script.""")
 	if len(duplicateFIles) > 0:
-		print "Folder contains duplicate files"
+		print ("Folder contains duplicate files")
 		for file in duplicateFIles:
-			print "Filename is:		{0}".format(file)
+			print ("Filename is:		{0}".format(file))
 
 

@@ -1,4 +1,3 @@
-
 import requests
 
 def weatherInfo(place):
@@ -16,12 +15,12 @@ def weatherInfo(place):
 
 
 if __name__ == "__main__":
-	userPlace = raw_input("Enter Name of the City:		")
+	userPlace = input("Enter Name of the City:		")
 	state, info = weatherInfo(userPlace)
 	if state:
 		currentTemp = info.get("main").get("temp")
 		currentTemp = currentTemp - 273.15
-		print "Current temp of {0}, is {1}".format(userPlace, currentTemp)
+		print ("Current temp of {0}, is {1} Degree".format(userPlace, currentTemp))
 	else:
-		print "Not a valid city"
+		print ("Not a valid city")
 

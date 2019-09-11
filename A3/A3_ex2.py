@@ -23,7 +23,7 @@ if __name__=="__main__":
 	with open('test.json') as json_file:
 		data = json.load(json_file)
 		id_generator(data)
-		print count
+		print(count)
 
 
 
