@@ -28,11 +28,11 @@ class CustomDict(dict):
         super(CustomDict, self).__setitem__(key, value)
 
 
-
-d = CustomDict({'c':1, 'b':2, 'a':3})
-print(d.get('c'))
-d['d']=4
-print(d)
+if __name__=="__main__":
+    d = CustomDict({'c':1, 'b':2, 'a':3})
+    print(d.get('c'))
+    d['d']=4
+    print(d)
 
 
 
